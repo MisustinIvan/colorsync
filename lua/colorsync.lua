@@ -29,7 +29,7 @@ local picker = function(array, callback)
 	local actions = require("telescope.actions")
 	local action_state = require("telescope.actions.state")
 
-	local opts = {}
+	local opts = conf.themes.get_dropdown()
 
 	return pickers
 		.new(opts, {
