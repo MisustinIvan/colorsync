@@ -14,7 +14,9 @@ local M = {}
 ---@param opts setup_opts
 M.setup = function(opts)
 	M.opts = opts
-	vim.api.nvim_create_user_command("ColorSync", M.pick_theme(), { bang = false })
+	vim.api.nvim_create_user_command("ColorSync", function()
+		M.pick_theme()
+	end, { bang = false })
 end
 
 ---@return string?
