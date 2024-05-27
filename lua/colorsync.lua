@@ -74,17 +74,4 @@ M.pick_theme = function()
 	end)
 end
 
-M.setup({
-	lualine_theme_dir = "plugins.lualine.themes",
-	pairs = {
-		["gruber-darker"] = "gruber_darker",
-		["catppuccin-macchiato"] = "onedark",
-	},
-})
-
---M.set_theme("gruber-darker")
---M.set_theme("catppuccin-macchiato")
-
-M.pick_theme()
-
 return M
